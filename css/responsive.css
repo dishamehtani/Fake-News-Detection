@@ -1,0 +1,115 @@
+/* ==========================
+   Tablet (992px and below)
+========================== */
+
+@media (max-width: 992px) {
+
+    .hero-content {
+        width: 90%;
+    }
+
+    .feature-container,
+    .news-container,
+    .step-container,
+    .about-grid,
+    .tech-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+
+    .table-container {
+        overflow-x: auto;
+    }
+
+}
+
+
+/* ==========================
+   Mobile (768px and below)
+========================== */
+
+@media (max-width: 768px) {
+
+    .navbar {
+        flex-direction: column;
+        gap: 15px;
+        padding: 15px;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+
+    .hero h1 {
+        font-size: 2rem;
+        text-align: center;
+    }
+
+    .hero p {
+        text-align: center;
+        font-size: 1rem;
+    }
+
+    textarea {
+        width: 100%;
+    }
+
+    .feature-container,
+    .news-container,
+    .step-container,
+    .about-grid,
+    .tech-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .history-actions {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .buttons {
+        flex-direction: column;
+    }
+
+}
+
+
+/* ==========================
+   Small Mobile (480px)
+========================== */
+
+@media (max-width: 480px) {
+
+    body {
+        font-size: 14px;
+    }
+
+    .logo {
+        font-size: 1.3rem;
+    }
+
+    .hero h1 {
+        font-size: 1.7rem;
+    }
+
+    .hero p {
+        font-size: 0.9rem;
+    }
+
+    #checkBtn,
+    .btn {
+        width: 100%;
+    }
+
+    table {
+        font-size: 13px;
+    }
+
+    th,
+    td {
+        padding: 10px;
+    }
+
+}

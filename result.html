@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detection Result | FakeNews AI</title>
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- ================= NAVBAR ================= -->
+
+<nav class="navbar">
+
+    <div class="logo">
+        <i class="fa-solid fa-shield-halved"></i>
+        FakeNews AI
+    </div>
+
+    <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="history.html">History</a></li>
+        <li><a href="about.html">About</a></li>
+    </ul>
+
+</nav>
+
+<!-- ================= RESULT ================= -->
+
+<section class="result-section">
+
+    <h1>Detection Result</h1>
+
+    <div class="result-card">
+
+        <div class="prediction real">
+            <i class="fa-solid fa-circle-check"></i>
+            <h2>REAL NEWS</h2>
+        </div>
+
+        <div class="confidence">
+
+            <h3>Confidence Score</h3>
+
+            <div class="progress-bar">
+
+                <div class="progress" style="width:92%;">
+                    92%
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="reason">
+
+            <h3>AI Explanation</h3>
+
+            <p>
+                The content closely matches trusted news sources,
+                uses factual language, and contains no significant
+                indicators of misinformation.
+            </p>
+
+        </div>
+
+        <div class="news-preview">
+
+            <h3>Submitted News</h3>
+
+            <p>
+                Artificial Intelligence is transforming industries by
+                improving automation, healthcare, education, and business
+                processes worldwide.
+            </p>
+
+        </div>
+
+        <div class="buttons">
+
+            <a href="index.html" class="btn">
+                <i class="fa-solid fa-arrow-left"></i>
+                Check Another News
+            </a>
+
+        </div>
+	<div class="meter">
+
+    <svg width="220" height="220">
+
+        <circle cx="110" cy="110" r="90"></circle>
+
+        <circle class="progress-circle"
+                cx="110"
+                cy="110"
+                r="90"></circle>
+
+    </svg>
+
+    <div class="percentage">
+
+        <h2>92%</h2>
+
+        <span>Confidence</span>
+
+    </div>
+
+</div>
+
+    </div>
+
+</section>
+
+<!-- ================= FOOTER ================= -->
+
+<footer>
+
+    <p>
+        © 2026 FakeNews AI | Built with HTML, CSS, JavaScript & Node.js
+    </p>
+
+</footer>
+
+<script src="js/script.js"></script>
+
+</body>
+</html>

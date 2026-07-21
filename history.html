@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>History | FakeNews AI</title>
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- ================= NAVBAR ================= -->
+
+<nav class="navbar">
+
+    <div class="logo">
+        <i class="fa-solid fa-shield-halved"></i>
+        FakeNews AI
+    </div>
+
+    <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="history.html" class="active">History</a></li>
+        <li><a href="about.html">About</a></li>
+    </ul>
+
+</nav>
+
+<!-- ================= HISTORY ================= -->
+
+<section class="history-section">
+
+    <h1>Search History</h1>
+
+    <p class="history-text">
+        View all previously analyzed news articles and their prediction results.
+    </p>
+
+    <div class="table-container">
+
+        <table>
+
+            <thead>
+
+            <tr>
+                <th>#</th>
+                <th>News Headline</th>
+                <th>Result</th>
+                <th>Confidence</th>
+                <th>Date</th>
+            </tr>
+
+            </thead>
+
+            <tbody>
+
+            <tr>
+                <td>1</td>
+                <td>AI transforms healthcare with early disease detection.</td>
+                <td class="real">
+                    <i class="fa-solid fa-circle-check"></i>
+                    Real
+                </td>
+                <td>96%</td>
+                <td>17 Jul 2026</td>
+            </tr>
+
+            <tr>
+                <td>2</td>
+                <td>Scientists discover miracle fruit that cures every disease.</td>
+                <td class="fake">
+                    <i class="fa-solid fa-triangle-exclamation"></i>
+                    Fake
+                </td>
+                <td>91%</td>
+                <td>16 Jul 2026</td>
+            </tr>
+
+            <tr>
+                <td>3</td>
+                <td>Government launches new education scholarship program.</td>
+                <td class="real">
+                    <i class="fa-solid fa-circle-check"></i>
+                    Real
+                </td>
+                <td>94%</td>
+                <td>15 Jul 2026</td>
+            </tr>
+
+            </tbody>
+
+        </table>
+
+    </div>
+
+    <div class="history-actions">
+
+        <button class="btn">
+            <i class="fa-solid fa-trash"></i>
+            Clear History
+        </button>
+
+        <a href="index.html" class="btn">
+            <i class="fa-solid fa-arrow-left"></i>
+            Back to Home
+        </a>
+
+    </div>
+
+</section>
+
+<!-- ================= FOOTER ================= -->
+
+<footer>
+
+    <p>
+        © 2026 FakeNews AI | Built with HTML, CSS, JavaScript & Node.js
+    </p>
+
+</footer>
+
+<script src="js/script.js"></script>
+
+</body>
+</html>

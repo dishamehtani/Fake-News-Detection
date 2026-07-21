@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fake News Detection</title>
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<!-- ================= NAVBAR ================= -->
+
+<nav class="navbar">
+
+    <div class="logo">
+        <i class="fa-solid fa-shield-halved"></i>
+        FakeNews AI
+    </div>
+
+    <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="history.html">History</a></li>
+        <li><a href="about.html">About</a></li>
+    </ul>
+
+</nav>
+
+<!-- ================= HERO ================= -->
+
+<section class="hero">
+
+    <div class="hero-content">
+
+        <h1>
+            AI Powered
+            <span>Fake News Detection</span>
+        </h1>
+
+        <p>
+            Verify news articles instantly using Artificial Intelligence.
+            Detect misinformation with confidence and accuracy.
+        </p>
+
+        <textarea
+                id="newsInput"
+                placeholder="Paste a news headline or complete article here..."></textarea>
+
+        <button id="checkBtn">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            Check News
+        </button>
+	
+	
+
+    </div>
+
+</section>
+
+<!-- ================= FEATURES ================= -->
+
+<section class="features">
+
+    <h2>Why Use Our System?</h2>
+
+    <div class="feature-container">
+
+        <div class="card">
+            <i class="fa-solid fa-brain"></i>
+
+            <h3>AI Detection</h3>
+
+            <p>
+                Uses Artificial Intelligence to classify
+                fake and real news accurately.
+            </p>
+        </div>
+
+        <div class="card">
+
+            <i class="fa-solid fa-chart-line"></i>
+
+            <h3>Confidence Score</h3>
+
+            <p>
+                Displays confidence percentage for
+                every prediction.
+            </p>
+
+        </div>
+
+        <div class="card">
+
+            <i class="fa-solid fa-clock-rotate-left"></i>
+
+            <h3>History</h3>
+
+            <p>
+                Access previously checked news articles
+                anytime.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ================= LATEST NEWS ================= -->
+
+<section class="latest-news">
+
+    <h2>Latest News</h2>
+
+    <div class="news-container">
+
+        <div class="news-card">
+
+            <img src="assets/images/tech.jpg" alt="News">
+
+            <h3>Technology News</h3>
+
+            <p>
+                Latest AI developments around the world.
+            </p>
+
+            <button>Read More</button>
+
+        </div>
+
+        <div class="news-card">
+
+            <img src="assets/images/business.jpg" alt="News">
+
+            <h3>Business News</h3>
+
+            <p>
+                Global market updates and economic trends.
+            </p>
+
+            <button>Read More</button>
+
+        </div>
+
+        <div class="news-card">
+
+            <img src="assets/images/healthcare.jpg" alt="News">
+
+            <h3>Health News</h3>
+
+            <p>
+                Medical discoveries and healthcare updates.
+            </p>
+
+            <button>Read More</button>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ================= HOW IT WORKS ================= -->
+
+<section class="steps">
+
+    <h2>How It Works</h2>
+
+    <div class="step-container">
+
+        <div class="step">
+
+            <span>1</span>
+
+            <h3>Paste News</h3>
+
+            <p>Enter a headline or article.</p>
+
+        </div>
+
+        <div class="step">
+
+            <span>2</span>
+
+            <h3>AI Analysis</h3>
+
+            <p>Our AI analyzes the content.</p>
+
+        </div>
+
+        <div class="step">
+
+            <span>3</span>
+
+            <h3>Get Result</h3>
+
+            <p>View prediction and confidence score.</p>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ================= FOOTER ================= -->
+
+<footer>
+
+    <p>
+        © 2026 FakeNews AI |
+        Developed using HTML, CSS, JavaScript & Node.js
+    </p>
+
+</footer>
+
+<script src="js/script.js"></script>
+<div id="loader">
+
+    <div class="loader-box">
+
+        <div class="spinner"></div>
+
+        <h2>Analyzing News...</h2>
+
+        <p>Please wait while our AI verifies the article.</p>
+
+    </div>
+
+</div>
+
+</body>
+</html>
