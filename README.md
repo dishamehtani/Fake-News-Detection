@@ -2,61 +2,68 @@
 
 ## Overview
 
-**Fake News Detection** is a web-based application designed to help users identify whether a news article or news content is potentially **real or fake**.
+**Fake News Detection** is a web-based application designed to help users analyze news content and identify whether the information may be **real or fake**.
 
-The system analyzes the news content provided by the user and uses automated detection techniques to determine its authenticity. The main objective of the project is to provide users with a simple and accessible platform for checking suspicious news and reducing the spread of misinformation.
+The application provides a simple interface where users can enter news content, view the analysis result, access previous analysis history, and learn more about the platform.
+
+The main objective of this project is to help users identify potentially misleading information and promote awareness about misinformation.
 
 ## Features
 
-### News Detection
+### Fake News Detection
 
 * Enter or paste news content for analysis.
-* Analyze news text to determine its authenticity.
-* Classify news as **Real** or **Fake**.
-* Display the prediction result clearly to the user.
-* Simple and easy-to-use interface.
+* Analyze submitted news content.
+* Identify whether news is potentially **Real** or **Fake**.
+* Display analysis results clearly.
+* Simple and easy-to-use verification process.
 
-### News Verification
+### Result Page
 
-* Helps users verify suspicious news content.
-* Provides quick analysis of submitted news.
-* Supports fact-checking and misinformation awareness.
-* Designed to make news verification easier for everyday users.
+* Displays the result of the analyzed news.
+* Provides a clear output for the submitted content.
+* Helps users quickly understand the verification result.
 
-### User Interface
+### History
 
-* Clean and organized interface.
-* Simple news input section.
-* Easy-to-understand prediction results.
-* User-friendly workflow for checking news.
+* View previously analyzed news.
+* Maintain a history of news verification results.
+* Easily access previous analyses.
+
+### About
+
+* Provides information about the Fake News Detection platform.
+* Explains the purpose and objective of the application.
 
 ## Tech Stack
 
-* **Python** — Core programming language
+* **Python** — Backend programming
 * **Flask** — Web application framework
 * **HTML** — Web page structure
 * **CSS** — Application styling
-* **JavaScript** — Frontend interaction
-* **Machine Learning / NLP** — News text analysis and classification
+* **JavaScript** — Frontend functionality
+* **API Integration** — News analysis and verification
 
 ## Project Structure
 
 ```text
 Fake-News-Detection/
 │
-├── app.py                  # Main Flask application
-├── templates/              # HTML templates
-│   └── index.html
+├── app.py                    # Main Flask application
 │
-├── static/                 # Static files
-│   ├── css/                # CSS styles
-│   ├── js/                 # JavaScript files
-│   └── images/             # Images and assets
+├── templates/                # HTML templates
+│   ├── index.html            # Home / news analysis page
+│   ├── result.html           # Displays analysis results
+│   ├── history.html          # Displays analysis history
+│   └── about.html            # About the application
 │
-├── model/                  # Detection model and related files
-├── dataset/                # Dataset used for the project
-├── requirements.txt        # Python dependencies
-└── README.md               # Project documentation
+├── static/                   # Static application files
+│   ├── css/                  # Stylesheets
+│   ├── js/                   # JavaScript files
+│   └── images/               # Images and assets
+│
+├── requirements.txt          # Python dependencies
+└── README.md                 # Project documentation
 ```
 
 ## Installation & Setup
@@ -108,46 +115,57 @@ http://127.0.0.1:5000/
 
 ## How It Works
 
-1. The user enters or pastes news content into the application.
-2. The submitted text is processed by the system.
-3. The detection mechanism analyzes the content.
-4. The system determines whether the news is likely to be **Real** or **Fake**.
-5. The prediction result is displayed to the user.
+1. The user enters or pastes news content on the home page.
+2. The application processes the submitted content.
+3. The news is analyzed using the integrated verification system.
+4. The user is redirected to the **Result Page**.
+5. The analysis result is displayed.
+6. Previous analyses can be accessed from the **History Page**.
+
+## Application Pages
+
+| Page           | Description                                |
+| -------------- | ------------------------------------------ |
+| `index.html`   | Main page for entering and analyzing news  |
+| `result.html`  | Displays the news analysis result          |
+| `history.html` | Displays previously analyzed news          |
+| `about.html`   | Provides information about the application |
 
 ## Application Workflow
 
 ```text
-User Enters News
-        ↓
-News Text Processing
-        ↓
-Content Analysis
-        ↓
-Fake News Detection
-        ↓
-Prediction Result
-        ↓
-Real / Fake
+Home Page
+    ↓
+Enter News Content
+    ↓
+Analyze News
+    ↓
+Verification Process
+    ↓
+Result Page
+    ↓
+Save/View History
 ```
 
 ## Use Cases
 
-* Checking suspicious news articles.
+* Checking suspicious news content.
 * Identifying potentially misleading information.
-* Supporting fact-checking activities.
+* Supporting basic fact-checking.
+* Maintaining previous news analysis history.
 * Creating awareness about misinformation.
-* Educational demonstration of Fake News Detection using technology.
+* Educational demonstration of fake news detection technology.
 
 ## Future Enhancements
 
-* Analyze news directly from URLs.
-* Integrate trusted fact-checking sources.
-* Provide confidence scores for predictions.
-* Support multiple languages.
-* Improve prediction accuracy with advanced NLP models.
-* Add news source credibility analysis.
-* Maintain history of previously analyzed news.
-* Deploy the application online for public access.
+* Direct verification using news article URLs.
+* Integration with additional trusted fact-checking sources.
+* News source credibility analysis.
+* Multilingual news verification.
+* More detailed analysis results.
+* Improved verification accuracy.
+* User accounts and personalized history.
+* Online deployment for public access.
 
 ## Contribution
 
@@ -155,4 +173,4 @@ Feel free to fork the repository, submit issues, or contribute through pull requ
 
 ## Disclaimer
 
-This project is developed for **educational purposes**. Prediction results should not be treated as definitive proof that a news article is true or false. Important information should always be verified using reliable and official sources.
+This project is developed for **educational purposes**. The generated results should not be considered definitive proof that a news article is true or false. Important information should always be verified through reliable and official sources.
